@@ -1,0 +1,202 @@
+<html lang="pt-br">
+    <head>
+        <title>Meu primeiro site</title>
+        <meta charset="utf-8">
+        <meta name="Autor" content="Gil Cesar F."> 
+        <meta name="viewport" content="width:device-width, initial-scale= 1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="short icon" href="icones/imgaba.png">
+    </head>
+    <body>
+        <header>
+            <div id="logocentralizar">
+                <img id="logo" src="icones/logo1.png" alt="Automação">
+            </div>
+            <input type="checkbox" id="check">
+            <label id="iconemenu" for="check"> <img class="icone1" src="icones/menu.png"></label>
+            <div class="barra">
+                <nav>
+                        <div class="link"><a id="lmenu" onclick = "document.getElementById('check').checked = false" href="#introducao">Projeto</a></div>
+                        <div class="link"><a id="lmenu" onclick = "document.getElementById('check').checked = false" href="#desenvolvimento1">Definição</a></div>
+                        <div class="link"><a id="lmenu" onclick = "document.getElementById('check').checked = false" href="#desenvolvimento2">Funcionamento</a></div>
+                        <div class="link"><a id="lmenu" onclick = "document.getElementById('check').checked = false" href="#positivos">Benefícios</a></div>
+                        <div class="link"><a id="lmenu" onclick = "document.getElementById('check').checked = false" href="#realidade">Realidade</a></div>
+                        <div class="link"><a id="lmenu" onclick = "document.getElementById('check').checked = false" href="#sobre">Contato</a></div>
+                </nav>
+            </div>
+            <ul id="menu">
+                <li><a id="lmenu" href="#introducao">Projeto</a></li>
+                <li><a id="lmenu" href="#desenvolvimento1">Definição</a></li>
+                <li><a id="lmenu" href="#desenvolvimento2">Funcionamento</a></li>
+                <li><a id="lmenu" href="#positivos">Benefícios</a></li>
+                <li><a id="lmenu" href="#realidade">Realidade</a></li>
+                <li><a id="lmenu" href="#sobre">Contato</a></li>
+            </ul>
+        </header>
+        <section id="capa">
+            <!-- Melhor separar tudo em seções para facilitar a compreensão, visto que não faz diferença. -->
+            <div id=fundo class="centralizar">
+                <h1 id ="titulo">Automação</h1>
+                <h2 id ="subtitulo">"A mudança não assegura necessariamente progresso, mas o progresso implacavelmente requer mudanças" </h2>
+                <p class="direita">Henry S. Commanger</p>
+                <a id = "ods" href = "https://nacoesunidas.org/pos2015/ods9/" target = "blank">ODS 9</a>
+            </div>
+        </section>  
+        <section id="introducao">
+            <h3 class="centralizar">Projeto</h3>
+            <div class="coluna dois">
+                <p class="justificar alinhar">
+                    Você ja parou para pensar sobre como utilizamos nossos recursos naturais? No Brasil, um estudo de 2019 mostra que 70% da água de todo o país é usada nas pecuárias, e quase a metade dessa água é desperdiçada, sendo que existem pessoas morrendo por desidratação no país.
+                    <br><br>
+                    Para que tenhamos uma boa qualidade de vida e, ao mesmo tempo, não prejudiquemos o planeta Terra, em setembro de 2015, a ONU (Organização das Nações Unidas) definiram objetivos que promovem a sustentabilidade. Tornando o planeta mais habitável e menos poluído. Esses objetivos receberam o nome de ODS (Objetvos de Desenvolvimento Sustentável).
+                    <br><br>
+                    Dentre essses objetivos, temos a ODS 9, a qual visa construir estruturas que comportem vários tipos de demanda, promover a industrialização a qual todos tenham a possibilidade de participar, e por ultimo, a necessidade de incentivar a inovação.
+                </p>
+            </div>
+            <div class="coluna dois">
+                <iframe class="alinhar" width="100%" height="50%" src="https://www.youtube.com/embed/ghQZfF0nEdQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="desenvolvimento1">
+            <h3 class="centralizar">O que é automatizar?</h3>
+            <div class="coluna dois">
+                <img class="img alinhar arredondar" src="imagens/img1.jpg" alt="Máquinas trabalhando no lugar de pessoas">
+            </div>
+            <div class="coluna dois">
+                <p class="justificar alinhar">Automatizar algo é tornar tarefas automaticas, ou seja, sem a necessidade de intervenção humana.
+                Por exemplo, quando vamos lavar roupas a grande maioria das pessoas usa uma máquina de lavar. Ela funciona apenas inserindo as roupas, sabão, e apos alguns minutos, você têm sua roupa limpa e cheirosa sem precisar fazer força para esfregar, pois a maquina faz isso para você. 
+                <br><br>
+                Além disso tudo, a programação dela evita que erros  importantes no processo aconteçam, como esfregar demais, deixar pouco tempo de molho, colocar muita água, não torcer direito e a roupa demorar a secar, entre outros. E considerando o meio ambiente, ainda estamos gastando menos água, menos tempo, menos esforço, coisas as quais podem ser dedicadas a outras tarefas.
+                <br><br>
+                As máquinas de lavar roupa também servem para gastar a menor quantidade de recursos possiveis, executar comandos no menor tempo esperado e com muito mais precisão e qualidade que um ser humano.
+                E esse é apenas um pequeno exemplo de como automatizar é uma escolha que gera bons resultados.
+                </p>
+            </div>
+        </section>
+        <section id="desenvolvimento2">
+            <h3 class="centralizar">Como funciona a Automação?</h3>
+            <div class="coluna dois">
+                <p class="justificar alinhar">
+                    De forma simples, a automação de qualquer coisa funciona com 3 principais elementos, sensores, controladores, atuadores. Não ache que por que são termos difíceis o conceito também é! Imagine que seu corpo é um processo automatico, pode ser um pouco estranho mas sim, é uma comparação boa.
+                    <br><br>
+                    Os nossos 5 sentidos são nossos sensores, eles nos falam o que está acontecendo no mundo para que nosso cérebro possa tomar as decisões certas, sendo assim nosso controlador é o cérebro. Nosso cérebro é responsável pela tomada de decisões e manda essas ordens aos nossos braços, pernas, pescoço e todas as partes que podemos controlar. Não foi tão difícil assim.
+                    <br><br>
+                    Mas você deve estar se perguntando: até onde vai tudo isso? Bom, nos seres humanos podemos superar nossos limites e metas, por que não podemos fazer com que automatizar processos seja da mesma forma? Nossa imaginação é o limite, há sempre novos sistemas sendo inventados todo dia, assim como este exemplo, onde criaram um sistema que monitorasse os batimentos cardíacos de uma pessoa em qualque lugar da casa, ferramenta muito util durante a pandêmia do COVID-19.
+                </p>
+            </div>
+            <div class="coluna dois">
+                <iframe class="alinhar" width="100%" height="50%" src="https://www.youtube.com/embed/UVRfHUtr5ps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="positivos" class="centralizar">
+            <h3 class="centralizar">O que ganho com isso?</h3>
+            <div class="coluna tres">
+                <div class="borda2">
+                    <img class="icone2" src="icones/icone1.png" alt="Planeta ecolológico">
+                </div>
+                <h4 class=>Ecolológico</h4>
+                <p>A automatização permite um menor gasto de recursos naturais, reduzindo significativamente todas as formas de descarte se for integrada em todos os lugares da casa, do prédio, da indústria entre outros </p>
+            </div>
+            <div class="coluna tres">
+                <div class="borda1">
+                    <img class="icone2" src="icones/icone3.png" alt="Gráfico">
+                </div>
+                <h4>Prático</h4>
+                <p>As possibilidades de aprimoramento e desenvolvimento são quase infinitas, o que disponibiliza uma maior rapidez na realização dos processos, fazendo com que o tempo necessário para muitas tarefas repetitivas possa ser gasto de outra forma. </p>
+            </div>
+            <div class="coluna tres">
+                <div class="borda2">
+                    <img class="icone2" src="icones/icone2.png" alt="Cofrinho">
+                </div>
+                <h4>Custo Benefício</h4>
+                <p>Quando você implementa o sistema, os gastos são grandes. Porém, em um curto período de tempo, os custos mensais podem cair como contas de luz, de água, a quantidade de recursos utilizada, consequentemente o que faz com que os lucros aumentem.</p>
+            </div>
+        </section>
+        <section id="realidade">
+            <h3 class="centralizar">Como é no mundo real?</h3>
+            <div class="coluna dois">
+                <p>O edifício Eurobusiness está      localizado na Ecoville de Curitiba/PR. A
+                    concepção projetual priorizou a sustentabilidade, mediante aplicação de sistemas integrados
+                    que garantem eficiência. Foi a primeira edificação do sul do Brasil a receber a distinção do
+                    selo Leadership in Energy and Environmental Design (LEED) CS 2009 Platinum, o mais alto
+                    nível de certificação, observa-se em âmbito mundial, que apenas 2% dos empreendimentos
+                    alcançaram esta categoria. Portanto, visa-se economia de energia, água, reciclagem de esgoto,
+                    reaproveitamento de água, sustentabilidade em manutenções de pisos, sistema de ar
+                    condicionado e elevadores, juntamente com a redução da carga térmica a partir do
+                    aproveitamento dos recursos naturais.
+                    <br><br>
+                    
+                    <img class="img arredondar" src="imagens/euro.jpg" alt="Prédio Eurobusiness">
+                </p>
+                </div> 
+                <div class="coluna dois">
+                <p>De acordo com o consultor da obra, Guido Petinelli, a edificação tornou-se
+                autossuficiente em água, a partir de um sistema integrado que inclui o poço artesiano no seu
+                abastecimento. Foi de suma importância a inserção de elementos de automação no projeto,
+                pois eles evitam desperdícios. A cisterna de controle de cheias e a utilização de água pluvial, a
+                qual é obrigatória por norma, foi implantada na cobertura, isto ocasionou a liberação de
+                espaço na garagem, resultando em economia e proporcionando a instalação do telhado verde,
+                sendo este o responsável pelo tratamento de efluentes, além de permitir a reutilização da água
+                em vasos sanitários e para a irrigação de jardins.
+                <br><br>
+                A preocupação com a qualidade do ar do edifício, fez com que todos os ambientes
+                possuíssem um sistema de renovação e filtragem do ar, garantindo aumento da eficiência
+                energética e redução de emissões de carbono por meio do sistema de ar condicionado VRVIV da DAIKIN que integra a refrigeração, aquecimento, ventilação e água quente.
+                Atentou-se para a fácil manutenção dos pisos, com um sistema de piso elevado que possibilita
+                a passagem de cabos e tubulações, como também a troca de layout em qualquer sala do
+                empreendimento sem a necessidade de sua remoção</p>
+            </div>
+                
+        </section>
+        <section id="sobre">
+            <h3 class="centralizar">Sobre Mim</h3>
+            <div class="coluna dois"> 
+                <p class="justificar alinhar">Meu nome é Gil Cesar Filho, tenho 19 anos e estou completando o ensino médio integrado com curso técnico de Automação Industrial no COLTEC - UFMG e sempre adorei a ideia de automatizar tudo.
+                <br><br>
+                Sou de Belo Horizonte - MG e sempre adorei esta cidade, mas sempre tive vontade de viajar o mundo e descobrir mais sobre outras pessoas, outras culturas, outros pontos de vista.
+                <br><br>
+                Em minha opinião, este curso foi um dos melhores que já fiz, e em razão disso so tenho a agradecer a JA Brasil por todo o trabalho que fizeram, sejam os professores, o material, o ambiente completamente descontraído, tudo estava incrível.
+                <br><br>
+                No decorrer da criação do site, tentei ao maximo integrar minha área do curso técnico com o projeto e mostrar como algo tão pequeno, e que as vezes passa despercebido, pode ser de grande importância para nosso desenvolvimento. 
+                <br><br>
+                Espero que tenham gostado!
+                </p>
+            </div>
+            <div class="coluna dois"> 
+                <img class="imgeu alinhar arredondar" src="imagens/eu.jpg" alt="Eu pensando">
+            </div>
+        </section>
+        <footer>
+            <div class="coluna dois">
+                <h3>Meu Primeiro Site</h3>
+                <p class="justificar">Projeto desenvolvido durante o curso Meu primeiro site, promovido pela JA Brasil e Microsoft.
+                </p>
+                <h3>Créditos</h3>
+                <p>Foto de capa feita por Carlos Oliva, no Pexels</p>
+                <p>
+                    Designed by
+                    <a class="linkn" href="http://www.freepik.com" target="blank"> vanitjan / Freepik</a>
+                </p>
+                Ícones feitos por <a  class="linkn" href="https://www.flaticon.com/br/autores/pause08" title="Pause08">Pause08</a> from <a class="linkn" href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a>
+                <br>
+                Ícones feitos por <a class="linkn" href="https://www.flaticon.com/br/autores/smashicons" title="Smashicons">Smashicons</a> from <a class="linkn" href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a>
+                <div>Ícones feitos por <a class="linkn" href="https://www.flaticon.com/br/autores/itim2101" title="itim2101">itim2101</a> from <a class="linkn" href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
+                Ícones feitos por <a class="linkn" href="https://www.flaticon.com/br/autores/freepik" title="Freepik">Freepik</a> from <a class="linkn" href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a>
+                <p>Texto da secção realidade feito em artigo da ECOINOVAR, para acessar clique <a class="linkn" href="http://ecoinovar.com.br/cd2017/arquivos/artigos/ECO1608.pdf">aqui.</a></p>
+
+            </div>
+            <div class="coluna dois">
+                <h3>Contato</h3>
+                <div class="contato"> 
+                    <img class="icone1 " src="icones/whatsapp.png" alt="Whatsapp"> 
+                    (31) 98103-7219
+                </div>
+                <br><br>
+                <div class="contato">
+                    <img class="icone1" src="icones/email.png" alt="E-mail">
+                    gilcesarcf@gmail.com
+                </div>
+            </div>        
+        </footer>
+    </body>
+</html>

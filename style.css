@@ -1,0 +1,333 @@
+/* Tags Gerais */
+html, body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+label{
+    visibility: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    padding: 50;
+    float: left;
+}
+
+footer{
+    float: left;
+    background-color: #293a4d;
+    color: rgb(207, 207, 207);
+    width: 100%;
+}
+
+.coluna{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+.dois{
+    width: 40%;
+}
+.tres{
+    width: 23%;
+}
+
+
+.justificar{
+    text-align: justify;
+}
+.centralizar{
+    text-align: center;
+}
+.direita{
+    text-align: right;
+    padding-right: 20%;
+}
+.alinhar{
+    padding-top: 5px;
+    margin: 0px;
+}
+
+
+.icone1{
+    width: 30px;
+}
+
+.borda2:hover{
+    background-color: #778da9;
+}
+.borda1:hover{
+    background-color: #778da9;
+}
+
+.img{
+    width: 100%;
+}
+.imgeu{
+    width: 100%;
+    height: 500px;
+}
+.arredondar{
+    border-radius: 2%;
+}
+
+
+.linkn{
+    color: rgb(128, 124, 124);
+}
+.linkn:hover{
+    color: darkgray;
+}
+
+/* --- Menu do site --- */
+
+header{
+    background-color: #415a77;
+    width: 100%;
+    height: 63px;
+    position: fixed;
+    z-index: 10;
+}
+
+#menu{
+    float: right;
+    margin: 0;
+    list-style: none;
+}
+
+li{
+    float: left;
+    padding: 20 15 20 15;
+    transition:all 0.5s ease;
+}
+
+li:hover{
+    background-color: #778da9;
+}
+
+#lmenu {
+    color: rgb(207, 207, 207);
+}
+
+
+#lmenu:hover{
+    color: white;
+}
+
+#logo{
+    height: 50px;
+    position: absolute;
+    top: 6px;
+    padding-left: 1%;
+}
+
+/* --- Capa do site --- */
+
+#capa{
+    padding: 0;
+    float: none;
+}
+
+#fundo{ 
+    background: url("imagens/fundo.jpg");
+    background-size: cover; /*Faz com que a imagem se adpte ao tamanho da tela*/
+    box-sizing: border-box; /*Faz a imagem ocupar apenas as medidas da janela do navegador*/
+    height: 100%;/* Referência para elementos da imagem e não da  página*/
+    padding-top: 12%;
+    color: white;
+}
+
+#titulo{
+    font-size: 45px;
+    line-height: 0.3;
+    color: #293a4d;
+}
+
+#subtitulo{
+    border-top: 2px white solid ;
+    padding-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#linkint{
+    color: black;
+    background: white;
+    border: white solid;
+    padding: 10px;
+}
+
+#linkint:hover{
+    color: black;
+}
+
+#ods{
+    color: white;
+    border: 3px white solid;
+    padding: 4px 7px;
+    border-radius: 0.8rem;
+}
+#ods:hover{
+    background-color: #778da9;
+    border: none;
+}
+    /* --- Introdução --- */
+
+#introducao{
+    border-left: 1.5vw #577590 solid;
+    border-right: 1.5vw #577590 solid;
+}
+
+/* --- Desenvolvimento 1 --- */
+
+#desenvolvimento1{
+    background-color: #f7f7f7;
+    border-left: 1.5vw #43aa8b solid;
+    border-right: 1.5vw #43aa8b solid;
+}
+
+/* --- Desenvolvimento 2 --- */
+#desenvolvimento2{
+    border-left: 1.5vw #90be6d solid;
+    border-right: 1.5vw #90be6d solid;    
+}
+
+/* --- Benefícios --- */
+
+#positivos{
+    background-color: #f7f7f7;
+    border-left: 1.5vw #43aa8b solid;
+    border-right: 1.5vw #43aa8b solid;
+}
+
+.icone2{
+    width: 50px;
+    padding-top: 11px;
+}
+.borda1{
+    border-radius: 30%;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+.borda2{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+/* --- Realidade --- */
+
+#realidade{
+    border-left: 1.5vw #43aa8b solid;
+    border-right: 1.5vw #43aa8b solid;
+}
+/* --- Sobre mim --- */
+#sobre{
+    background-color: #f7f7f7;
+    border-left: 1.5vw #577590 solid;
+    border-right: 1.5vw #577590 solid;
+}
+
+#img{
+    width: 100%;
+}
+
+/* --- Rodapé --- */
+
+.contato{
+    float: left;
+    text-align: left;
+}
+
+@media all and (max-width: 768px) {
+    #menu{
+        visibility: hidden;
+    }
+
+    #logocentralizar{
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+
+    #logo{
+        margin-left: 0px;
+        top: 6px;
+        transform: translateX(-50%);
+    }
+    
+    .coluna, .dois, .tres{
+        display: block;
+        width: 90%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+
+    label{
+        visibility: visible;
+    }
+    
+    #check{
+        display: none;
+    }
+    
+    #iconemenu{
+        cursor: pointer;
+        padding: 18px;
+        position: absolute;
+        z-index: 15;
+    }
+    
+    
+    
+    nav a{
+    text-decoration: none;
+    }
+    
+    .link{
+        background-color: rgb(18, 41, 88);
+        padding: 3vw;
+        font-family: Arial;
+        font-size: 12pt;    
+        transition: all 0.5s linear;
+        color: rgb(207, 207, 207);
+        border-bottom: 2px solid #415a77;
+        padding-left: 1.3vw;
+    }
+    
+    .link:hover{
+        background-color: #415a77;
+        color: white;
+    }
+    
+    #check:checked ~ .barra{
+        transform: translateX(50vw);
+
+    }
+    
+}
+
+
+#check{
+    visibility: hidden;
+}
+
+.barra{
+    display: block;
+    box-sizing: border-box;
+    background-color:  #415a77;
+    width: 30vw;
+    height: 20vh;
+    position: absolute;
+    left: -50vw;
+    z-index: 10;
+    padding-top: 63px;
+    transition: all 0.5s linear;
+}
